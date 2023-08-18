@@ -13,7 +13,6 @@ This repository hosts the code and assets for my personal portfolio website, whe
 - Contact
 
 ## About Me
-https://www.linkedin.com/in/yusra-227b3024a/
 ![image](https://github.com/yusra05/YUSRA/assets/112852251/763416c5-95fc-4a8a-afc3-9db6bdfdcdd8)
 
 
@@ -21,9 +20,9 @@ https://www.linkedin.com/in/yusra-227b3024a/
 
 Feel free to reach out to me through the following channels:
 
-- Email: yusra
+- Email: yusra.123987@ms.du.ac.in
 - LinkedIn: https://www.linkedin.com/in/yusra-227b3024a/
-- Personal Website: [Your Portfolio Website URL]
+- Personal Website: 
 
 Looking forward to connecting with you!
 
