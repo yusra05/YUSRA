@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="/public/assets/favicon.png" type="image/x-icon">
+  <title>Portfolio - || ♡ɐɹSՈʎ♡ ||🕊</title>
+</head>
+<body class="bg-black">
+  <!-- nav bar -->
+  <header class="text-white bg-black opacity-80 shadow-2xl body-font fixed top-0 w-full z-50">
+    <nav class="flex items-center justify-between flex-wrap p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+        <div class="ml-3 font-bold xl:text-5xl lg:text-4xl sm:text-3xl text-2xl">
+          <span class="text-yellow-400">Port</span><span class="text-white">folio</span>
+      </div>
+            </div>
+      <div class="block lg:hidden">
+        <button id="menuButton" class="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div id="navLinks" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+        <div class="text-sm lg:flex-grow">
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 mr-5 font-semibold hover:bg-white  sm:rounded-md transition duration-300 text-white hover:text-yellow-500 lg:text-3xl sm:text-2xl text-xl">
+            Home
+          </a>
+          <a href="#section1" class="block mt-4 lg:inline-block lg:mt-0 mr-5 font-semibold hover:bg-white  sm:rounded-md transition duration-300 text-white hover:text-yellow-500 lg:text-3xl sm:text-2xl text-xl">
+            About
+          </a>
+          <a href="#section2" class="block mt-4 lg:inline-block lg:mt-0 mr-5 font-semibold hover:bg-white  sm:rounded-md transition duration-300 text-white hover:text-yellow-500 lg:text-3xl sm:text-2xl text-xl">
+            Skills
+          </a>
+          <a href="#section3" class="block mt-4 lg:inline-block lg:mt-0 mr-5 font-semibold hover:bg-white  sm:rounded-md transition duration-300 text-white hover:text-yellow-500 lg:text-3xl sm:text-2xl text-xl">
+            Projects
+          </a>
+          <a href="#section4" class="block mt-4 lg:inline-block lg:mt-0 mr-5 font-semibold hover:bg-white  sm:rounded-md transition duration-300 text-white hover:text-yellow-500 lg:text-3xl sm:text-2xl text-xl">
+            Experience
+          </a>
+        </div>
+      </div>
+        <div class="hidden lg:block">
+          <button onclick="scrollToSection('#section5')" class="inline-flex items-center font-semibold sm:text-2xl text-xl text-yellow-400  hover:text-white border-yellow-400 border-2 py-1 px-3 focus:outline-none hover:border-white rounded mt-4 md:mt-0">
+            Contact
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section  -->
+
+  <section class="text-gray-600 body-font relative">
+    <div class="absolute inset-0 z-[-1]">
+      <img class="w-full h-full object-cover object-center" src="/public/assets/banner-bg.png" alt="background-banner">
+    </div>
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center relative">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center relative">
+        <h1 class="title-font xl:text-7xl lg:text-5xl sm:text-4xl text-2xl  font-medium ">
+          <div class="mt-20 md:ml-40 xl:text-7xl lg:text-6xl sm:text-5xl text-4xl">
+            <span class="text-white font-semibold">Hi, I am </span>
+            <span id="changingText" class="inline-block font-bold text-yellow-400">YUSRA.</span>
+          </div>
+          <br>
+          <span class="inline-block md:ml-40  xl:text-6xl lg:text-5xl sm:text-4xl text-2xl text-white  mt-2" id="typewriter-text">I am</span>
+        </h1>
+        <div class="md:ml-40 mt-8 sm:text-2xl text-xl text-blue-100 font-semibold leading-relaxed">
+          I'm a Final Year Computer Science  Student at MSCW DU.
+          <br> <p class="mt-2">Primarily interested in Web Development and Web3.</p>
+        </div>
+        <div class="flex justify-center md:ml-40 mt-10 space-x-4">
+          <a href="mailto:yusra.123987@ms.du.ac.in" target="_blank" class="icon-link">
+              <img src="/public/assets/email.png" alt="Email Icon" class="bg-white  sm:rounded-md w-20 h-20 ">
+          </a>
+          <a href="https://github.com/yusra05" target="_blank" class="icon-link">
+              <img src="/public/assets/github.ico" alt="GitHub Icon" class="bg-white  sm:rounded-md w-20 h-20 ">
+          </a>
+          <a href="https://www.linkedin.com/in/yusra-227b3024a/" target="_blank" class="icon-link">
+              <img src="/public/assets/linkedin.ico" alt="LinkedIn Icon" class="bg-white  sm:rounded-md w-20 h-20">
+          </a>
+      </div>
+        <div class="flex justify-center md:ml-40 mt-14">
+          <button onclick="redirectToURL()" class="inline-flex items-center font-semibold sm:text-2xl text-xl text-yellow-400  hover:text-white border-yellow-400 border-2 py-1 px-3 focus:outline-none hover:border-white rounded mt-4 md:mt-0">
+            Resume
+            <svg class="w-6 h-6 ml-1 " xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" fill="#f3d335"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="w-[50%] h-full  sm:flex-none hidden lg:block">
+        <img class="object-cover object-center rounded md:max-w-none mx-auto" alt="hero" src="/public/assets/hero img.gif">
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- about secion -->
+  <section id="section1" class="text-white md:mx-10">
+    <div class="container mx-auto flex px-5 py-24 lg:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="about" src="/public/assets/about.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <div class="ml-3 mt-10 font-semibold xl:text-7xl lg:text-6xl sm:text-5xl text-4xl">
+          <span class="text-yellow-400 ">| Abo</span><span class="text-white">ut</span>
+      </div>
+        <p class="sm:text-xl text-lg mt-20 leading-relaxed">
+          Hello! I'm <b class="text-yellow-400">YUSRA,</b> a dedicated  <b class="text-yellow-400">Computer Science</b> student at the <b class="text-yellow-400">Mata Sundri College for Women, University of Delhi.</b> where I'm passionately sharpening my programming skills and delving into the boundless realm of technology.  
+        </p>
+        <p class="sm:text-xl text-lg mt-8 leading-relaxed">
+          As an active contributor to the <b class="text-yellow-400">open-source community,</b> I'm deeply involved in impactful projects of <b class="text-yellow-400">GirlScript Summer of Code and Timechain Summer of Code,</b> where I'm not only enhancing my skills but also making meaningful contributions to the tech world.
+        </p>
+        <p class="sm:text-xl text-lg mt-8 leading-relaxed">
+          I recently concluded a rewarding <b class="text-yellow-400">web development internship</b> at <b class="text-yellow-400">Bharat Intern and TECH-A-INTERN,</b> where I gained invaluable hands-on experience and further fortified my skills in crafting seamless digital experiences.
+        </p>
+        <p class="sm:text-xl text-lg mt-8 leading-relaxed">
+          Beyond this, I'm an avid reader, a creative problem solver, and making a positive impact on both the digital landscape and the people around me.
+        </p>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- skills section -->
+
+  <section id="section2" class=" py-16 ">
+    <div class="container mx-auto">
+        <div class="flex items-center mb-20 ml-20 font-semibold xl:text-7xl lg:text-6xl sm:text-5xl text-4xl">
+            <span class="text-yellow-400">| Ski</span><span class="text-white">lls</span>
+        </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 ">
+
+            <!-- C++ -->
+<div class="group relative">
+  <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+      <img src="/public/assets/cpp.png" alt="C++" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+      <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+          C++
+      </p>
+  </div>
+</div>
+
+
+           <!-- Java -->
+           <div class="group relative">
+            <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+                <img src="/public/assets/java.png" alt="JAVA" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+                <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+                  Java
+                </p>
+            </div>
+        </div>
+
+         <!-- HTML -->
+         <div class="group relative">
+          <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+              <img src="/public/assets/html.png" alt="HTML" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+              <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+                HTML
+              </p>
+          </div>
+      </div>
+
+        <!-- CSS -->
+        <div class="group relative">
+          <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+              <img src="/public/assets/css.png" alt="CSS" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+              <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+                CSS
+              </p>
+          </div>
+      </div>
+
+    <!-- Bootstrap
+    <div class="group relative">
+      <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+          <img src="/public/assets/bootstrap.png" alt="Bootstrap" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+          <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute w-full text-center -bottom-8">
+              Bootstrap
+          </p>
+      </div>
+  </div> -->
+
+  <!-- Tailwind -->
+  <div class="group relative">
+    <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+        <img src="/public/assets/tailwind.png" alt="Tailwind" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+        <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+          Tailwind
+        </p>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<div class="group relative">
+  <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+      <img src="/public/assets/js.png" alt="JavaScript" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+      <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+        JavaScript
+      </p>
+  </div>
+</div>
+
+
+    <!-- React -->
+<div class="group relative">
+  <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+      <img src="/public/assets/react.png" alt="React" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+      <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+        React
+      </p>
+  </div>
+</div>
+
+     <!-- Svelte -->
+<div class="group relative">
+  <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+      <img src="/public/assets/svelte.png" alt="Svelte" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+      <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+        Svelte
+      </p>
+  </div>
+</div>
+
+       <!-- MongoDB
+  <div class="group relative">
+    <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+        <img src="/public/assets/mongodb.png" alt="MongoDB" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+        <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute w-full text-center -bottom-8">
+          MongoDB
+        </p>
+    </div>
+</div> -->
+
+
+       <!-- Firebase -->
+  <div class="group relative">
+    <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+        <img src="/public/assets/firebase.png" alt="Firebase" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+        <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+          Firebase
+        </p>
+    </div>
+</div>
+
+      <!-- Git -->
+  <div class="group relative">
+    <div class="p-4 shadow-md mb-10 transition duration-300 hover:scale-105">
+        <img src="/public/assets/git.png" alt="Git" class="w-1/2 h-2/6 mx-auto bg-white rounded-md">
+        <p class="text-white mb-10 bg-yellow-400 text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-200 absolute text-center -bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-md" style="width: 120px;">
+          Git
+        </p>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+  
+
+<!-- Projects Section-->
+
+<section id="section3" class="text-white body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      </div>
+    </div>
+    <div class="flex items-center mb-20 ml-20 font-semibold xl:text-7xl lg:text-6xl sm:text-5xl text-4xl">
+      <span class="text-yellow-400">| Pro</span><span class="text-white">jects</span>
+  </div>
+    <div class="flex flex-wrap sm:-m-4  -mb-10 -mt-4 md:mx-20">
+      
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/public/assets/weather.png">
+        </div>
+        <h2 class="text-xl font-bold title-font text-yellow-400 mt-5">Weather Web App</h2>
+        <a href="https://github.com/yusra05/Weather_Web_App" class="text-yellow-400 inline-flex items-center mt-3">Github 
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/public/assets/netflix.png">
+        </div>
+        <h2 class="text-xl font-bold title-font text-yellow-400 mt-5">Netflix Clone</h2>
+        <a href="https://github.com/yusra05/Netflix_Clone" class="text-yellow-400 inline-flex items-center mt-3">Github
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/public/assets/portfolio.png">
+        </div>
+        <h2 class="text-xl font-bold title-font text-yellow-400 mt-5">Personal Portfolio website</h2>
+        <a href="#" class="text-yellow-400 inline-flex items-center mt-3">Github
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+    <button id="viewButton" class="flex mx-auto mt-16 font-bold text-white  bg-yellow-400 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-300 rounded text-lg">
+      View more
+    </button>
+
+  </div>
+</section>
+
+
+<!-- Experience Section-->
+
+<section id="section4" class="text-white body-font">
+  <div class="container px-5 py-20 mx-auto">
+    <div class="flex items-center mb-20 ml-20 font-semibold xl:text-7xl lg:text-6xl sm:text-5xl text-4xl">
+      <span class="text-yellow-400">| Expe</span><span class="text-white">rience</span>
+  </div>
+  <!-- TimeChain Labs -->
+    <div class="flex items-start lg:w-3/5 mx-auto border-b pb-10 mb-10 border-yellow-400 sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-primary-2 text-white flex-shrink-0">
+        <div class="rounded-lg  overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/public/assets/tsoc.jpeg">
+        </div>
+       </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-yellow-400 text-5xl title-font font-bold mb-2">TimeChain Labs</h2>
+        <p class="leading-relaxed text-3xl font-bold">Open-source Contributor</p>
+        <ul class="list-disc pl-8">
+          <li class="mb-4 mt-4">
+              Contributing to open-source project, Bharat Legaltech - a legal tech website.
+          </li>
+          <li class="mb-4">
+              Worked on the whitepaper, user flow, low fidelity wireframe, and development of the website.
+          </li>
+          <li class="mb-4">
+              Collaborating with mentors and other contributors.
+          </li>
+          <li class="mb-4">
+              Writing code, designing, documenting, and testing.
+          </li>
+          <li class="mb-4">
+              Participating in team meetings and discussions.
+          </li>
+          <li class="mb-4">
+              Developed responsive web pages: About Us and Contact Us.
+          </li>
+      </ul>
+
+      <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Technical Skills ::</span>
+        <p class="leading-relaxed  text-base"> Html5, Tailwind, Javascript, Svelte, firebase , Git/Github.</p>
+    </div>
+
+    <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Soft Skills ::</span>
+        <p class="leading-relaxed  text-base"> Teamwork, TimeManagement, Communication, Presentation skills.</p>
+    </div>
+    </div>
+    </div>
+
+    <!-- Bharat Intern -->
+
+    <div class="flex items-start lg:w-3/5 mx-auto border-b pb-10 mb-10 border-yellow-400 sm:flex-row flex-col">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-yellow-400 text-5xl title-font font-bold mb-2">Bharat Intern</h2>
+        <p class="leading-relaxed text-3xl font-bold">Web Developer Intern</p>
+        <ul class="list-disc pl-8">
+          <li class="mb-4 mt-4">
+            Develop Porfolio website, Temperature convertor and Netflix Clone.
+          </li>
+          <li class="mb-4">
+            Conducting testing and bug fixing.
+          </li>
+      </ul>
+      <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Technical Skills ::</span>
+        <p class="leading-relaxed  text-base"> Html5, CSS, Javascript, Git/Github.</p>
+    </div>
+
+    <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Soft Skills ::</span>
+        <p class="leading-relaxed  text-base"> TimeManagement, Presentation skills.</p>
+    </div>
+      </div>
+      <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-blue-primary-2 text-white flex-shrink-0">
+        <div class="rounded-lg  overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/public/assets/bi.jpeg">
+        </div>        
+      </div>
+    </div>
+
+
+
+    <!-- GirlScript Summer of Code -->
+    <div class="flex items-start lg:w-3/5 mx-auto border-b pb-10 mb-10 border-yellow-400 sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-primary-2 text-white flex-shrink-0">
+        <div class="rounded-lg  overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/public/assets/grl.jpeg">
+        </div>
+      </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-yellow-400 text-5xl title-font font-bold mb-2">GirlScript Summer of Code</h2>
+        <p class="leading-relaxed text-3xl font-bold">Open-source Contributor</p>
+        <ul class="list-disc pl-8">
+          <li class="mb-4 mt-4">
+            Contributing to Front-end projects under the GirlScript Summer of Code program.
+          </li>
+          <li class="mb-4">
+            Collaborating with project admin and other contributors.
+          </li>
+          <li class="mb-4">
+              Collaborating with mentors and other contributors.
+          </li>
+          <li class="mb-4">
+              Resolving issues and writing code.
+          </li>
+      </ul>
+
+      <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Technical Skills ::</span>
+        <p class="leading-relaxed  text-base"> Html5, Tailwind, Javascript, React, Git/Github.</p>
+    </div>
+
+    <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Soft Skills ::</span>
+        <p class="leading-relaxed  text-base"> Teamwork, TimeManagement, Communication, Presentation skills.</p>
+    </div>
+    </div>
+    </div>
+
+    <!-- TECH-A-INTERN  -->
+
+    <div class="flex items-start lg:w-3/5 mx-auto border-b pb-10 mb-10 border-yellow-400 sm:flex-row flex-col">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-yellow-400 text-5xl title-font font-bold mb-2">TECH-A-INTERN</h2>
+        <p class="leading-relaxed text-3xl font-bold">Web Developement and Designing Intern</p>
+        <ul class="list-disc pl-8">
+          <li class="mb-4 mt-4">
+            Develop Porfolio website, Recipie Page and Image Slider.
+          </li>
+          <li class="mb-4 mt-4">
+            Develop Weather Web App, Image Gallery with Filtering and To-Do list.
+          </li>
+          <li class="mb-4 mt-4">
+            Develop E-Commerce website, Social Media Web App and Movie Recommendation Website.
+          </li>
+          <li class="mb-4">
+            Conducting testing and bug fixing.
+          </li>
+      </ul>
+      <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Technical Skills ::</span>
+        <p class="leading-relaxed  text-base"> Html5, CSS, tailwind, Javascript, firebase, API, Git/Github.</p>
+    </div>
+
+    <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Soft Skills ::</span>
+        <p class="leading-relaxed  text-base"> TimeManagement, Presentation skills.</p>
+    </div>
+      </div>
+      <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-blue-primary-2 text-white flex-shrink-0">
+        <div class="rounded-lg  overflow-hidden">
+          <img alt="content" class="object-cover  object-center h-full w-full" src="/public/assets/tech.jpeg">
+        </div>        
+      </div>
+    </div>
+
+
+     <!-- Campus Ambassador -->
+     <div class="flex items-start lg:w-3/5 mx-auto border-b pb-10 mb-10 border-yellow-400 sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-primary-2 text-white flex-shrink-0">
+        <div class="rounded-lg  overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/public/assets/ca.jpeg">
+        </div>
+       </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-yellow-400 text-5xl title-font font-bold mb-2">Tryst IIT-Delhi</h2>
+        <p class="leading-relaxed text-3xl font-bold">Campus Ambassador</p>
+        <p class="leading-relaxed text-xl font-base">
+          As a campus ambassador of TRYST, my primary responsibility was to promote the organization and its events.
+        </p>
+
+
+    <div class="mb-2 mt-6 ml-3 font-semibold  text-2xl">
+        <span class="text-yellow-300">Soft Skills ::</span>
+        <p class="leading-relaxed  text-base"> Social Media, Communication.</p>
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- contact section -->
+<section id="section5" style="scroll-behavior: smooth; transition: padding 0.3s;" class="text-white body-font relative">
+  <div class="absolute inset-0 bg-gray-300">
+    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.52629668376!2d76.76357783356833!3d28.643684634738104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1692302193927!5m2!1sen!2sin">
+  </iframe>
+  </div>
+  <div class="container px-5 py-24 mx-auto flex">
+    <div class="lg:w-1/3 md:w-1/2 bg-black rounded-lg p-8 flex flex-col md:mx-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+      <h2 class="text-yellow-400 text-5xl mb-6 font-bold title-font">| Contact</h2>
+      <div class="relative mb-4">
+        <label for="email" class="leading-7 text-2xl text-white">Email</label>
+        <input type="email" placeholder="example.@gmail.com" id="email" name="email" class="w-full mt-4 bg-white rounded border border-gray-300 focus:border-yellow-400 focus:ring-2 focus:ring-green-200 text-base outline-none text-yellow-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div>
+      <div class="relative mb-4">
+        <label for="message" class="leading-7 text-2xl text-white">Message</label>
+        <textarea id="message" placeholder="message....." name="message" class="w-full mt-4 bg-white rounded border border-gray-300 focus:border-yellow-400 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-yellow-400 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+      </div>
+      <button class="text-white hover:text-yellow-400 bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-white rounded font-bold text-2xl">Submit</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer  class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <div class="flex title-font font-bold items-center md:justify-start justify-center text-4xl">
+      <span class="text-yellow-400">Port</span><span class="text-white">folio</span>
+    </div>
+    <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© copywrighted 2023 by YUSRA-
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a href="mailto:yusra.123987@ms.du.ac.in" target="_blank" class="icon-link">
+        <img src="/public/assets/email.png" alt="Email Icon" class="bg-white mr-2  sm:rounded-md w-10 h-10 ">
+    </a>
+    <a href="https://github.com/yusra05" target="_blank" class="icon-link">
+        <img src="/public/assets/github.ico" alt="GitHub Icon" class="bg-white mr-2 sm:rounded-md w-10 h-10 ">
+    </a>
+    <a href="https://www.linkedin.com/in/yusra-227b3024a/" target="_blank" class="icon-link">
+        <img src="/public/assets/linkedin.ico" alt="LinkedIn Icon" class="bg-white  sm:rounded-md w-10 h-10">
+    </a>
+      
+    </span>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
