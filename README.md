@@ -23,7 +23,7 @@ Feel free to reach out to me through the following channels:
 
 - Email: yusra.123987@ms.du.ac.in
 - LinkedIn: https://www.linkedin.com/in/yusra-227b3024a/
-- Personal Website: 
+- Personal Website: https://yusra-syed-portfolio.netlify.app/
 
 Looking forward to connecting with you!
 
