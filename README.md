@@ -13,7 +13,8 @@ This repository hosts the code and assets for my personal portfolio website, whe
 - Contact
 
 ## About Me
-![image](https://github.com/yusra05/YUSRA/assets/112852251/763416c5-95fc-4a8a-afc3-9db6bdfdcdd8)
+
+![image](https://github.com/yusra05/YUSRA/assets/112852251/45ecac92-de32-40e8-afb3-6a171a2780b1)
 
 
 ## Contact
